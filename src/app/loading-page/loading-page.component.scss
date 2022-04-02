@@ -1,0 +1,24 @@
+.content {
+  display: flex;
+  justify-content: center;
+}
+.login {
+  width: 400px;
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+mat-form-field {
+  width: 90%;
+}
+
+.btn {
+  line-height: 1;
+}
