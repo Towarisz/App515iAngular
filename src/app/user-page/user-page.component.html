@@ -1,1 +1,43 @@
-<p>user-page works!</p>
+<div class="content">
+  <div class="box border">
+    <span class="office-number">{{ user.officeNr }}</span>
+    <div>{{ user.fName }} {{ user.lName }}</div>
+    <button
+      mat-flat-button
+      [ngClass]="{ 'mat-complete': ExerciseDone }"
+      (click)="changeExerciseStatus($event)"
+    >
+      Wykonałem zadanie
+    </button>
+    <button mat-flat-button color="accent" (click)="sendHelpRequest()">
+      Potrzebuje pomocy
+    </button>
+  </div>
+  <div>
+    <mat-list role="list">
+      <div *ngFor="let question of questionsList">
+        <mat-list-item role="listitem">
+          <span>{{ question[1] }}</span>
+          <button
+            mat-flat-button
+            color="accent"
+            style="line-height: 1.5"
+            (click)="seeQuest(question[2])"
+          >
+            Zobacz pytanie
+          </button>
+          <button
+            mat-flat-button
+            color="accent"
+            style="line-height: 1.5"
+            (click)="seeAnwser(anwserList[question[0]])"
+            [disabled]="!anwserList[question[0]]"
+          >
+            Zobacz odpowiedż
+          </button>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+      </div>
+    </mat-list>
+  </div>
+</div>

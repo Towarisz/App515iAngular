@@ -1,0 +1,15 @@
+<div>
+  <h1 mat-dialog-title>Pytanie</h1>
+  <mat-form-field appearance="fill" class="full-height">
+    <textarea
+      matInput
+      appearance="fill"
+      [(ngModel)]="data.anwser"
+      autocomplete="off"
+      disabled
+    ></textarea>
+  </mat-form-field>
+  <div mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Close</button>
+  </div>
+</div>

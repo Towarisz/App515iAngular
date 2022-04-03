@@ -1,0 +1,55 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 400px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 18px;
+  align-content: center;
+}
+
+.border {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.office-number {
+  font-size: 17px;
+  position: relative;
+  align-items: center;
+  top: -30px;
+  z-index: 10;
+  background-color: #eee5e9;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.content > div {
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.mat-complete {
+  background-color: #70f031;
+}
+
+:host ::ng-deep .mat-list-item-content {
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+}
+
+mat-list {
+  width: 1000px;
+}

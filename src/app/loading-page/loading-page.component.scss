@@ -16,9 +16,27 @@
 }
 
 mat-form-field {
+  margin-top: 5px;
   width: 90%;
 }
 
-.btn {
-  line-height: 1;
+button {
+  margin-top: 10px;
+}
+
+.drawer-container {
+  position: absolute;
+  height: 100vh;
+  width: 400px;
+  background-color: #eee5e9;
+  right: 0;
+}
+
+.drawer-sidenav {
+  background-color: #eee5e950;
+  width: 200px;
+}
+
+.drawer-sidenav button {
+  margin: 10px;
 }

@@ -1,5 +1,17 @@
+<mat-drawer-container
+  class="drawer-container"
+  (mouseover)="drawer.toggle()"
+  (mouseout)="drawer.toggle()"
+>
+  <mat-drawer #drawer class="drawer-sidenav" mode="side" position="end">
+    <button mat-flat-button color="primary" (click)="loginAsTeacher()">
+      Zaloguj jako nauczyciel
+    </button>
+  </mat-drawer>
+</mat-drawer-container>
+
 <div class="content">
-  <form name="loginForm" class="login" #form="ngForm">
+  <form name="loginForm" class="login" #form="ngForm" autocomplete="off">
     <mat-form-field class="example-form-field" appearance="fill">
       <mat-label>Imię</mat-label>
       <input matInput type="text" [(ngModel)]="fName" name="fName" required />

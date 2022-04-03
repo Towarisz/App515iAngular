@@ -1,0 +1,15 @@
+<div>
+  <h1 mat-dialog-title>Pomoc</h1>
+  <mat-form-field appearance="fill">
+    <mat-label>Opisz problem w krótki sposób</mat-label>
+    <input matInput [(ngModel)]="shortDesc" autocomplete="off"/>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="full-height">
+    <mat-label>Rozwiń</mat-label>
+    <textarea matInput appearance="fill" [(ngModel)]="longDesc" autocomplete="off"></textarea>
+  </mat-form-field>
+  <div mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Close</button>
+    <button mat-button (click)="send()">Send</button>
+  </div>
+</div>

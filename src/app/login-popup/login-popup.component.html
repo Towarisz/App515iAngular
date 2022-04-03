@@ -1,0 +1,11 @@
+<div>
+  <h1 mat-dialog-title>Logowanie</h1>
+  <mat-form-field appearance="fill">
+    <mat-label>Hasło</mat-label>
+    <input matInput [(ngModel)]="password" autocomplete="off" type="password" />
+  </mat-form-field>
+  <div mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Close</button>
+    <button mat-button (click)="send()">Send</button>
+  </div>
+</div>
